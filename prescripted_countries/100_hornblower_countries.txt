@@ -99,9 +99,10 @@ ufop = {
 	home_planet_initial_pops = 26
 
 	conquered_system_initializers = {
-		"ufop_andor_initializer" "ufop_vulcan_initializer" "ufop_tellar_initializer" "ufop_outpost_initializer"
-		"zone_rom_ufop_eden_initializer" "zone_rom_ufop_draken_initializer" "denobula_outpost_initializer" "risa_outpost_initializer" 
-		"cordian_outpost_initializer"
+		"ufop_andor_initializer" "ufop_vulcan_initializer" "ufop_tellar_initializer"
+		"ufop_outpost_initializer" "zone_rom_ufop_eden_initializer" "zone_rom_ufop_draken_initializer"
+		"denobula_outpost_initializer" "risa_outpost_initializer" "cordian_outpost_initializer"
+		"wolf_initializer" "ufop_qualor_initializer" "ufop_setlik_initializer"
 	}
 
 	graphical_culture = "ufop_01"
@@ -140,6 +141,8 @@ ufop = {
 		trait = leader_trait_frontier_spirit
 	}
 }
+
+#Klingon Empire Definition
 
 klingon1 = {
 	name = "Klingon Empire"
@@ -289,10 +292,12 @@ romulan1 = {
 	conquered_system_initializers = { 
 		"romulan_romulus_initializer" "romulan_kithomer_initializer" "romulan_unroth_initializer"
 		"romulan_chaltok_initializer" "romulan_achernar_initializer" "romulan_outpost_initializer" 
-		"romulan_romii_initializer" "zone_rom_ufop_galorndon_core_initializer" "romulan_rator_initializer"
-		"zone_rom_ufop_devron_initializer" "zone_rom_ufop_iota_pavonis_initializer" "zone_rom_ufop_nelvana_initializer"
+		"romulan_romii_initializer" "romulan_rator_initializer" "romulan_cheron_initializer"
+		"romulan_glintara_initializer" "zone_rom_ufop_galorndon_core_initializer"
+		"zone_rom_ufop_devron_initializer" "zone_rom_ufop_iota_pavonis_initializer"
 		"zone_rom_ufop_fenris_initializer" "zone_rom_ufop_poth_mek_initializer" "zone_rom_ufop_moores_star_initializer"
 		"zone_rom_ufop_epsilon_legato_initializer" "zone_rom_ufop_theta_curry_initializer" "zone_rom_ufop_iconia_initializer"
+		"zone_rom_ufop_nelvana_initializer" "zone_rom_ufop_nimbus_initializer"
 	}
 
 	graphical_culture = "romulan_01"
@@ -430,7 +435,12 @@ cardassian1 = {
 	planet_class = "pc_continental"
 	planet_subclass = psc_class_m
 	initializer = "cardassian_cardassia_initializer"
-	conquered_system_initializers = { "cardassian_cardassia_initializer" "cardassian_cardassia_initializer" "cardassia_amleth_initializer" "cardassia_septimus_initializer" "cardassia_outpost_initializer" "cardassian_celtris_initializer" "cardassia_velos_initializer" "cardassia_sheva_initializer" "cardassia_avenal_initializer" }
+	conquered_system_initializers = { 
+		"cardassian_cardassia_initializer" "cardassian_cardassia_initializer" "cardassian_amleth_initializer"
+		"cardassian_septimus_initializer" "cardassia_outpost_initializer" "cardassian_celtris_initializer"
+		"cardassian_velos_initializer" "cardassian_sheva_initializer" "cardassian_avenal_initializer"
+		"cardassian_unefra_initializer"
+	}
 
 	graphical_culture = "cardassian_01"
 	city_graphical_culture = "cardassian_01"
