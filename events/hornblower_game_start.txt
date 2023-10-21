@@ -39,14 +39,17 @@ event = {
 
 			last_created_neutral_zone = { 
 				add_system_to_neutral_zone = event_target:eden_star.solar_system
-				#add_system_to_neutral_zone = event_target:romii_star.solar_system
+				add_system_to_neutral_zone = event_target:iconia_star.solar_system
 				add_system_to_neutral_zone = event_target:draken_star.solar_system
 				add_system_to_neutral_zone = event_target:galorndon_core_star.solar_system
+				add_system_to_neutral_zone = event_target:nelvana_star.solar_system
 				add_system_to_neutral_zone = event_target:devron_star.solar_system
 				add_system_to_neutral_zone = event_target:iota_pavonis_star.solar_system
-				add_system_to_neutral_zone = event_target:nelvana_star.solar_system
 				add_system_to_neutral_zone = event_target:fenris_star.solar_system
 				add_system_to_neutral_zone = event_target:poth_mek_star.solar_system
+				add_system_to_neutral_zone = event_target:moores_star_star.solar_system
+				add_system_to_neutral_zone = event_target:epsilon_legato_star.solar_system
+				add_system_to_neutral_zone = event_target:theta_curry_star.solar_system
 				# HRB-2033: Add more Systems here
 			}
 		}

@@ -46,6 +46,11 @@ bespoke_procedural_scenario = {
 	nebula_size = 60
 	nebula_min_dist = 200
 
+	nebula = { name = "Briar Patch" position = { x = -19 y = 407 } radius = 8 }
+	nebula = { name = "Badlands" position = { x = 72 y = 376 } radius = 8 }
+	nebula = { name = "Typon Expanse" position = { x = -48 y = 252 } radius = 15 }
+	nebula = { name = "Klach D'krel Brakt" position = { x = -177 y = 378 } radius = 20 }
+
 	num_wormhole_pairs = { min = 0 max = 0 }
 	num_wormhole_pairs_default = 0
 	num_gateways = { min = 0 max = 0 }
@@ -82,7 +87,7 @@ bespoke_procedural_scenario = {
 
 	system = {
 		id = "6" name = "NAME_Khitomer" position = { x = -86 y = 404 }
-		initializer = romulan_khitomer_initializer spawn_weight = { base = 1 }
+		initializer = klingon_khitomer_initializer spawn_weight = { base = 1 }
 	}
 
 	system = {
@@ -406,12 +411,12 @@ bespoke_procedural_scenario = {
 	}
 
 	system = {
-		id = "71" name = "NAME_Bethel" position = { x = -81 y = 414 }
+		id = "71" name = "Korvat" position = { x = -81 y = 414 }
 		initializer = ufop_outpost_initializer spawn_weight = { base = 1 }
 	}
 
 	system = {
-		id = "72" name = "NAME_TyGokor" position = { x = -175 y = 475 }
+		id = "72" name = "NAME_TyGokor" position = { x = -119 y = 467 }
 		initializer = klingon_tygokor_initializer spawn_weight = { base = 1 }
 	}
 
@@ -965,6 +970,256 @@ bespoke_procedural_scenario = {
 		initializer = uncontrolled_system_initializer spawn_weight = { base = 1 }
 	}
 
+	system = {
+		id = "181" name = "Moore's Star" position = { x = -29 y = 336 }
+		initializer = romulan_moores_star_initializer spawn_weight = { base = 1 }
+	}
+
+	system = {
+		id = "182" name = "Epsilon Legato" position = { x = -72 y = 375 }
+		initializer = romulan_epsilon_legato_initializer spawn_weight = { base = 1 }
+	}
+
+	system = {
+		id = "183" name = "Theta Curry" position = { x = -47 y = 355 }
+		initializer = romulan_theta_curry_initializer spawn_weight = { base = 1 }
+	}
+
+	system = {
+		id = "184" name = "Iconia" position = { x = -76 y = 376}
+		initializer = romulan_iconia_initializer spawn_weight = { base = 1 }
+	}
+
+	system = {
+		id = "185" name = "Trimble" position = { x = -52 y = 415 }
+		initializer = ufop_outpost_initializer spawn_weight = { base = 1 }
+	}
+
+	system = {
+		id = "186" name = "Qualor" position = { x = -47 y = 361 }
+		initializer = ufop_outpost_initializer spawn_weight = { base = 1 }
+	}
+
+	system = {
+		id = "187" name = "Tomed" position = { x = -59 y = 367 }
+		initializer = ufop_outpost_initializer spawn_weight = { base = 1 }
+	}
+
+	system = {
+		id = "188" name = "Barradas" position = { x = -38 y = 356 }
+		initializer = ufop_outpost_initializer spawn_weight = { base = 1 }
+	}
+
+	system = {
+		id = "189" name = "Deneva" position = { x = -14 y = 375 }
+		initializer = ufop_outpost_initializer spawn_weight = { base = 1 }
+	}
+
+	system = {
+		id = "190" name = "Gamma Hromi" position = { x = -67 y = 405 }
+		initializer = ufop_outpost_initializer spawn_weight = { base = 1 }
+	}
+
+	system = {
+		id = "191" name = "Hyralan" position = { x = -51 y = 372 }
+		initializer = ufop_outpost_initializer spawn_weight = { base = 1 }
+	}
+
+	system = {
+		id = "192" name = "Celes" position = { x = -44 y = 379 }
+		initializer = ufop_outpost_initializer spawn_weight = { base = 1 }
+	}
+
+	system = {
+		id = "193" name = "Beta Thoridor" position = { x = -93 y = 397 }
+		initializer = klingon_outpost_initializer spawn_weight = { base = 1 }
+	}
+
+	system = {
+		id = "194" name = "Chi'dan" position = { x = -100 y = 390 }
+		initializer = klingon_outpost_initializer spawn_weight = { base = 1 }
+	}
+
+	system = {
+		id = "195" position = { x = -64 y = 396 }
+		initializer = ufop_outpost_initializer spawn_weight = { base = 1 }
+	}
+
+	system = {
+		id = "196" name = "Camus" position = { x = 0 y = 449 }
+		initializer = ufop_outpost_initializer spawn_weight = { base = 1 }
+	}
+
+	system = {
+		id = "197" name = "K'norm" position = { x = 23 y = 443 }
+		initializer = ufop_outpost_initializer spawn_weight = { base = 1 }
+	}
+
+	system = {
+		id = "198" name = "Mathen" position = { x = 47 y = 422 }
+		initializer = ufop_outpost_initializer spawn_weight = { base = 1 }
+	}
+
+	system = {
+		id = "199" name = "Melona" position = { x = 35 y = 423 }
+		initializer = uncontrolled_system_initializer spawn_weight = { base = 1 }
+	}
+
+	system = {
+		id = "200" name = "Hobus" position = { x = -39 y = 315 }
+		initializer = romulan_outpost_initializer spawn_weight = { base = 1 }
+	}
+
+	system = {
+		id = "201" name = "Gamma Tucanae" position = { x = -27 y = 313 }
+		initializer = romulan_outpost_initializer spawn_weight = { base = 1 }
+	}
+
+	system = {
+		id = "202" position = { x = -63 y = 328 }
+		initializer = romulan_outpost_initializer spawn_weight = { base = 1 }
+	}
+
+	system = {
+		id = "203" name = "Dewa" position = { x = -133 y = 369 }
+		initializer = romulan_outpost_initializer spawn_weight = { base = 1 }
+	}
+
+	system = {
+		id = "204" name = "D'Deridex" position = { x = -120 y = 372 }
+		initializer = romulan_outpost_initializer spawn_weight = { base = 1 }
+	}
+
+	system = {
+		id = "205" name = "Nequencia" position = { x = -110 y = 378 }
+		initializer = romulan_outpost_initializer spawn_weight = { base = 1 }
+	}
+
+	system = {
+		id = "206" position = { x = -115 y = 355 }
+		initializer = romulan_outpost_initializer spawn_weight = { base = 1 }
+	}
+
+	system = {
+		id = "207" name = "Gamma Eridon" position = { x = -63 y = 444 }
+		initializer = klingon_outpost_initializer spawn_weight = { base = 1 }
+	}
+
+	system = {
+		id = "208" name = "No'Mat" position = { x = -78 y = 430 }
+		initializer = klingon_outpost_initializer spawn_weight = { base = 1 }
+	}
+
+	system = {
+		id = "209" name = "Ganalda" position = { x = -60 y = 431 }
+		initializer = klingon_outpost_initializer spawn_weight = { base = 1 }
+	}
+
+	system = {
+		id = "210" name = "Lambda Geminorum" position = { x = -37 y = 446 }
+		initializer = klingon_outpost_initializer spawn_weight = { base = 1 }
+	}
+
+	system = {
+		id = "211" name = "K'Vort" position = { x = -55 y = 490 }
+		initializer = klingon_outpost_initializer spawn_weight = { base = 1 }
+	}
+
+	system = {
+		id = "212" name = "Vornak" position = { x = -124 y = 500 }
+		initializer = klingon_outpost_initializer spawn_weight = { base = 1 }
+	}
+
+	system = {
+		id = "213" position = { x = -114 y = 516 }
+		initializer = klingon_outpost_initializer spawn_weight = { base = 1 }
+	}
+
+	system = {
+		id = "214" name = "Bortas" position = { x = -214 y = 437 }
+		initializer = klingon_outpost_initializer spawn_weight = { base = 1 }
+	}
+
+	system = {
+		id = "215" name = "Ikalia" position = { x = -166 y = 446 }
+		initializer = klingon_outpost_initializer spawn_weight = { base = 1 }
+	}
+
+	system = {
+		id = "216" name = "Qul'Miwi" position = { x = -152 y = 458 }
+		initializer = klingon_outpost_initializer spawn_weight = { base = 1 }
+	}
+
+	system = {
+		id = "217" name = "Ya'vang" position = { x = -65 y = 538 }
+		initializer = klingon_outpost_initializer spawn_weight = { base = 1 }
+	}
+
+	system = {
+		id = "218" position = { x = -104 y = 512 }
+		initializer = klingon_outpost_initializer spawn_weight = { base = 1 }
+	}
+
+	system = {
+		id = "219" position = { x = -103 y = 500 }
+		initializer = klingon_outpost_initializer spawn_weight = { base = 1 }
+	}
+
+	system = {
+		id = "220" position = { x = -209 y = 436 }
+		initializer = klingon_outpost_initializer spawn_weight = { base = 1 }
+	}
+
+	system = {
+		id = "221" position = { x = -207 y = 450 }
+		initializer = klingon_outpost_initializer spawn_weight = { base = 1 }
+	}
+
+	system = {
+		id = "222" position = { x = -159 y = 441 }
+		initializer = klingon_outpost_initializer spawn_weight = { base = 1 }
+	}
+
+	system = {
+		id = "223" position = { x = -100 y = 485 }
+		initializer = klingon_outpost_initializer spawn_weight = { base = 1 }
+	}
+
+	system = {
+		id = "224" position = { x = -90 y = 460 }
+		initializer = klingon_outpost_initializer spawn_weight = { base = 1 }
+	}
+
+	system = {
+		id = "225" name = "Delta Hydri" position = { x = -98 y = 313 }
+		initializer = romulan_outpost_initializer spawn_weight = { base = 1 }
+	}
+
+	system = {
+		id = "226" name = "T'met" position = { x = -52 y = 291 }
+		initializer = romulan_outpost_initializer spawn_weight = { base = 1 }
+	}
+
+	system = {
+		id = "227" name = "Belak" position = { x = -57 y = 304 }
+		initializer = romulan_outpost_initializer spawn_weight = { base = 1 }
+	}
+
+	system = {
+		id = "228" position = { x = -24 y = 391 }
+		initializer = ufop_outpost_initializer spawn_weight = { base = 1 }
+	}
+
+	system = {
+		id = "229" name = "NAME_Ferenginar" position = { x = 63 y = 322 }
+		initializer = ferengi_initializer  spawn_weight = { base = 1 }
+	}
+
+	#TODO SYS INIT
+	system = {
+		id = "230" name = "NAME_Sona" position = { x = -16 y = 415 } 
+		initializer = ferengi_initializer spawn_weight = { base = 1 }
+	} 
 
 	#--------- Bespoke Hazards ---------#
 
