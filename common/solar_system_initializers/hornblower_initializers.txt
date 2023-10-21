@@ -261,56 +261,6 @@ romulan_rator_initializer = {
 	}
 }
 
-romulan_devron_initializer = {
-	class = "rl_all_stars"
-	flags = { outpost romulan_system romulan }
-	usage = static_system_init
-	flags = { devron }
-
-	planet = {
-		count = 1
-		class = star
-		orbit_distance = 20
-		orbit_angle = 1
-		size = { min = 20 max = 30 }
-		has_ring = no
-
-		init_effect = { 
-			change_pc = pc_k_star 
-		}
-	}
-	
-	planet = {
-		count = 1
-		class = star
-		orbit_distance = 0
-		orbit_angle = 148
-		size = { min = 20 max = 30 }
-		has_ring = no
-
-		init_effect = { 	
-			change_pc = pc_g_star 
-			save_global_event_target_as = devron_star
-		}
-	}
-	
-	change_orbit = 50
-	
-	planet = {
-		count = { min = 3 max = 8 }
-		class = rl_unhabitable_planets
-		orbit_distance = { min = 20 max = 30 }
-		home_planet = no
-	}
-
-	late_init_effect = {
-		create_starbase = {
-			size = starbase_outpost # We can use any Starbase size. The sizes are located on "game\common\starbase_types"
-			owner = event_target:romulan_country # Using the event_target saved on ufop_system_initializer
-		}
-	}
-}
-
 cardassia_outpost_initializer = {
 	class = "rl_all_stars"
 	flags = { outpost cardassian_system cardassia }
@@ -503,406 +453,6 @@ cardassia_avenal_initializer = {
 		create_starbase = {
 			size = starbase_outpost # We can use any Starbase size. The sizes are located on "game\common\starbase_types"
 			owner = event_target:cardassian_country # Using the event_target saved on ufop_system_initializer
-		}
-	}
-}
-
-romulan_iota_pavonis_initializer = {
-	class = "rl_all_stars"
-	flags = { outpost romulan_system romulan }
-	usage = static_system_init
-	flags = { iota_pavonis }
-
-	planet = {
-		count = 1
-		class = star
-		orbit_distance = 20
-		orbit_angle = 1
-		size = { min = 20 max = 30 }
-		has_ring = no
-
-		init_effect = { 
-			change_pc = pc_k_star 
-		}
-	}
-	
-	planet = {
-		count = 1
-		class = star
-		orbit_distance = 0
-		orbit_angle = 148
-		size = { min = 20 max = 30 }
-		has_ring = no
-
-		init_effect = { 	
-			change_pc = pc_g_star 
-			save_global_event_target_as = iota_pavonis_star
-		}
-	}
-	
-	change_orbit = 50
-	
-	planet = {
-		count = { min = 3 max = 8 }
-		class = rl_unhabitable_planets
-		orbit_distance = { min = 20 max = 30 }
-		home_planet = no
-	}
-
-	late_init_effect = {
-		create_starbase = {
-			size = starbase_outpost # We can use any Starbase size. The sizes are located on "game\common\starbase_types"
-			owner = event_target:romulan_country # Using the event_target saved on ufop_system_initializer
-		}
-	}
-}
-
-romulan_nelvana_initializer = {
-	class = "rl_all_stars"
-	flags = { outpost romulan_system romulan }
-	usage = static_system_init
-	flags = { nelvana }
-
-	planet = {
-		count = 1
-		class = star
-		orbit_distance = 20
-		orbit_angle = 1
-		size = { min = 20 max = 30 }
-		has_ring = no
-
-		init_effect = { 
-			change_pc = pc_k_star 
-		}
-	}
-	
-	planet = {
-		count = 1
-		class = star
-		orbit_distance = 0
-		orbit_angle = 148
-		size = { min = 20 max = 30 }
-		has_ring = no
-
-		init_effect = { 	
-			change_pc = pc_g_star 
-			save_global_event_target_as = nelvana_star
-		}
-	}
-	
-	change_orbit = 50
-	
-	planet = {
-		count = { min = 3 max = 8 }
-		class = rl_unhabitable_planets
-		orbit_distance = { min = 20 max = 30 }
-		home_planet = no
-	}
-
-	late_init_effect = {
-		create_starbase = {
-			size = starbase_outpost # We can use any Starbase size. The sizes are located on "game\common\starbase_types"
-			owner = event_target:romulan_country # Using the event_target saved on ufop_system_initializer
-		}
-	}
-}
-
-romulan_fenris_initializer = {
-	class = "rl_all_stars"
-	flags = { outpost romulan_system romulan }
-	usage = static_system_init
-	flags = { fenris }
-
-	planet = {
-		count = 1
-		class = star
-		orbit_distance = 20
-		orbit_angle = 1
-		size = { min = 20 max = 30 }
-		has_ring = no
-
-		init_effect = { 
-			change_pc = pc_k_star 
-		}
-	}
-	
-	planet = {
-		count = 1
-		class = star
-		orbit_distance = 0
-		orbit_angle = 148
-		size = { min = 20 max = 30 }
-		has_ring = no
-
-		init_effect = { 	
-			change_pc = pc_g_star 
-			save_global_event_target_as = fenris_star
-		}
-	}
-	
-	change_orbit = 50
-	
-	planet = {
-		count = { min = 3 max = 8 }
-		class = rl_unhabitable_planets
-		orbit_distance = { min = 20 max = 30 }
-		home_planet = no
-	}
-
-	late_init_effect = {
-		create_starbase = {
-			size = starbase_outpost # We can use any Starbase size. The sizes are located on "game\common\starbase_types"
-			owner = event_target:romulan_country # Using the event_target saved on ufop_system_initializer
-		}
-	}
-}
-
-romulan_poth_mek_initializer = {
-	class = "rl_all_stars"
-	flags = { outpost romulan_system romulan }
-	usage = static_system_init
-	flags = { poth_mek }
-
-	planet = {
-		count = 1
-		class = star
-		orbit_distance = 20
-		orbit_angle = 1
-		size = { min = 20 max = 30 }
-		has_ring = no
-
-		init_effect = { 
-			change_pc = pc_k_star 
-		}
-	}
-	
-	planet = {
-		count = 1
-		class = star
-		orbit_distance = 0
-		orbit_angle = 148
-		size = { min = 20 max = 30 }
-		has_ring = no
-
-		init_effect = { 	
-			change_pc = pc_g_star 
-			save_global_event_target_as = poth_mek_star
-		}
-	}
-	
-	change_orbit = 50
-	
-	planet = {
-		count = { min = 3 max = 8 }
-		class = rl_unhabitable_planets
-		orbit_distance = { min = 20 max = 30 }
-		home_planet = no
-	}
-
-	late_init_effect = {
-		create_starbase = {
-			size = starbase_outpost # We can use any Starbase size. The sizes are located on "game\common\starbase_types"
-			owner = event_target:romulan_country # Using the event_target saved on ufop_system_initializer
-		}
-	}
-}
-
-romulan_moores_star_initializer = {
-	class = "rl_all_stars"
-	flags = { outpost romulan_system romulan }
-	usage = static_system_init
-	flags = { moores_star }
-
-	planet = {
-		count = 1
-		class = star
-		orbit_distance = 20
-		orbit_angle = 1
-		size = { min = 20 max = 30 }
-		has_ring = no
-
-		init_effect = { 
-			change_pc = pc_k_star 
-		}
-	}
-	
-	planet = {
-		count = 1
-		class = star
-		orbit_distance = 0
-		orbit_angle = 148
-		size = { min = 20 max = 30 }
-		has_ring = no
-
-		init_effect = { 	
-			change_pc = pc_g_star 
-			save_global_event_target_as = moores_star_star
-		}
-	}
-	
-	change_orbit = 50
-	
-	planet = {
-		count = { min = 3 max = 8 }
-		class = rl_unhabitable_planets
-		orbit_distance = { min = 20 max = 30 }
-		home_planet = no
-	}
-
-	late_init_effect = {
-		create_starbase = {
-			size = starbase_outpost # We can use any Starbase size. The sizes are located on "game\common\starbase_types"
-			owner = event_target:romulan_country # Using the event_target saved on ufop_system_initializer
-		}
-	}
-}
-
-romulan_epsilon_legato_initializer = {
-	class = "rl_all_stars"
-	flags = { outpost romulan_system romulan }
-	usage = static_system_init
-	flags = { epsilon_legato }
-
-	planet = {
-		count = 1
-		class = star
-		orbit_distance = 20
-		orbit_angle = 1
-		size = { min = 20 max = 30 }
-		has_ring = no
-
-		init_effect = { 
-			change_pc = pc_k_star 
-		}
-	}
-	
-	planet = {
-		count = 1
-		class = star
-		orbit_distance = 0
-		orbit_angle = 148
-		size = { min = 20 max = 30 }
-		has_ring = no
-
-		init_effect = { 	
-			change_pc = pc_g_star 
-			save_global_event_target_as = epsilon_legato_star
-		}
-	}
-	
-	change_orbit = 50
-	
-	planet = {
-		count = { min = 3 max = 8 }
-		class = rl_unhabitable_planets
-		orbit_distance = { min = 20 max = 30 }
-		home_planet = no
-	}
-
-	late_init_effect = {
-		create_starbase = {
-			size = starbase_outpost # We can use any Starbase size. The sizes are located on "game\common\starbase_types"
-			owner = event_target:romulan_country # Using the event_target saved on ufop_system_initializer
-		}
-	}
-}
-
-romulan_theta_curry_initializer = {
-	class = "rl_all_stars"
-	flags = { outpost romulan_system romulan }
-	usage = static_system_init
-	flags = { theta_curry }
-
-	planet = {
-		count = 1
-		class = star
-		orbit_distance = 20
-		orbit_angle = 1
-		size = { min = 20 max = 30 }
-		has_ring = no
-
-		init_effect = { 
-			change_pc = pc_k_star 
-		}
-	}
-	
-	planet = {
-		count = 1
-		class = star
-		orbit_distance = 0
-		orbit_angle = 148
-		size = { min = 20 max = 30 }
-		has_ring = no
-
-		init_effect = { 	
-			change_pc = pc_g_star 
-			save_global_event_target_as = theta_curry_star
-		}
-	}
-	
-	change_orbit = 50
-	
-	planet = {
-		count = { min = 3 max = 8 }
-		class = rl_unhabitable_planets
-		orbit_distance = { min = 20 max = 30 }
-		home_planet = no
-	}
-
-	late_init_effect = {
-		create_starbase = {
-			size = starbase_outpost # We can use any Starbase size. The sizes are located on "game\common\starbase_types"
-			owner = event_target:romulan_country # Using the event_target saved on ufop_system_initializer
-		}
-	}
-}
-
-romulan_iconia_initializer = {
-	class = "rl_all_stars"
-	flags = { outpost romulan_system romulan }
-	usage = static_system_init
-	flags = { iconia }
-
-	planet = {
-		count = 1
-		class = star
-		orbit_distance = 20
-		orbit_angle = 1
-		size = { min = 20 max = 30 }
-		has_ring = no
-
-		init_effect = { 
-			change_pc = pc_k_star 
-		}
-	}
-	
-	planet = {
-		count = 1
-		class = star
-		orbit_distance = 0
-		orbit_angle = 148
-		size = { min = 20 max = 30 }
-		has_ring = no
-
-		init_effect = { 	
-			change_pc = pc_g_star 
-			save_global_event_target_as = iconia_star
-		}
-	}
-	
-	change_orbit = 50
-	
-	planet = {
-		count = { min = 3 max = 8 }
-		class = rl_unhabitable_planets
-		orbit_distance = { min = 20 max = 30 }
-		home_planet = no
-	}
-
-	late_init_effect = {
-		create_starbase = {
-			size = starbase_outpost # We can use any Starbase size. The sizes are located on "game\common\starbase_types"
-			owner = event_target:romulan_country # Using the event_target saved on ufop_system_initializer
 		}
 	}
 }
@@ -4904,9 +4454,109 @@ cordian_outpost_initializer = {
 	}
 }
 
-#-------- Other Bespoke Systems --------#
+#-------- Romulan - UFOP Neutral Zone Systems --------#
 
-ufop_eden_initializer = {
+zone_rom_ufop_iota_pavonis_initializer = {
+	class = "rl_all_stars"
+	flags = { outpost romulan_system romulan }
+	usage = static_system_init
+	flags = { iota_pavonis }
+
+	planet = {
+		count = 1
+		class = star
+		orbit_distance = 20
+		orbit_angle = 1
+		size = { min = 20 max = 30 }
+		has_ring = no
+
+		init_effect = { 
+			change_pc = pc_k_star 
+		}
+	}
+	
+	planet = {
+		count = 1
+		class = star
+		orbit_distance = 0
+		orbit_angle = 148
+		size = { min = 20 max = 30 }
+		has_ring = no
+
+		init_effect = { 	
+			change_pc = pc_g_star 
+			save_global_event_target_as = iota_pavonis_star
+		}
+	}
+	
+	change_orbit = 50
+	
+	planet = {
+		count = { min = 3 max = 8 }
+		class = rl_unhabitable_planets
+		orbit_distance = { min = 20 max = 30 }
+		home_planet = no
+	}
+
+	late_init_effect = {
+		create_starbase = {
+			size = starbase_outpost # We can use any Starbase size. The sizes are located on "game\common\starbase_types"
+			owner = event_target:romulan_country # Using the event_target saved on ufop_system_initializer
+		}
+	}
+}
+
+zone_rom_ufop_fenris_initializer = {
+	class = "rl_all_stars"
+	flags = { outpost romulan_system romulan }
+	usage = static_system_init
+	flags = { fenris }
+
+	planet = {
+		count = 1
+		class = star
+		orbit_distance = 20
+		orbit_angle = 1
+		size = { min = 20 max = 30 }
+		has_ring = no
+
+		init_effect = { 
+			change_pc = pc_k_star 
+		}
+	}
+	
+	planet = {
+		count = 1
+		class = star
+		orbit_distance = 0
+		orbit_angle = 148
+		size = { min = 20 max = 30 }
+		has_ring = no
+
+		init_effect = { 	
+			change_pc = pc_g_star 
+			save_global_event_target_as = fenris_star
+		}
+	}
+	
+	change_orbit = 50
+	
+	planet = {
+		count = { min = 3 max = 8 }
+		class = rl_unhabitable_planets
+		orbit_distance = { min = 20 max = 30 }
+		home_planet = no
+	}
+
+	late_init_effect = {
+		create_starbase = {
+			size = starbase_outpost # We can use any Starbase size. The sizes are located on "game\common\starbase_types"
+			owner = event_target:romulan_country # Using the event_target saved on ufop_system_initializer
+		}
+	}
+}
+
+zone_rom_ufop_eden_initializer = {
 	name = "NAME_Eden"
 	class = "rl_all_stars"
 	usage = static_system_init
@@ -4972,6 +4622,468 @@ ufop_eden_initializer = {
 		}
 	}
 }
+
+zone_rom_ufop_devron_initializer = {
+	class = "rl_all_stars"
+	flags = { outpost romulan_system romulan }
+	usage = static_system_init
+	flags = { devron }
+
+	planet = {
+		count = 1
+		class = star
+		orbit_distance = 20
+		orbit_angle = 1
+		size = { min = 20 max = 30 }
+		has_ring = no
+
+		init_effect = { 
+			change_pc = pc_k_star 
+		}
+	}
+	
+	planet = {
+		count = 1
+		class = star
+		orbit_distance = 0
+		orbit_angle = 148
+		size = { min = 20 max = 30 }
+		has_ring = no
+
+		init_effect = { 	
+			change_pc = pc_g_star 
+			save_global_event_target_as = devron_star
+		}
+	}
+	
+	change_orbit = 50
+	
+	planet = {
+		count = { min = 3 max = 8 }
+		class = rl_unhabitable_planets
+		orbit_distance = { min = 20 max = 30 }
+		home_planet = no
+	}
+
+	late_init_effect = {
+		create_starbase = {
+			size = starbase_outpost # We can use any Starbase size. The sizes are located on "game\common\starbase_types"
+			owner = event_target:romulan_country # Using the event_target saved on ufop_system_initializer
+		}
+	}
+}
+
+zone_rom_ufop_moores_star_initializer = {
+	class = "rl_all_stars"
+	flags = { outpost romulan_system romulan }
+	usage = static_system_init
+	flags = { moores_star }
+
+	planet = {
+		count = 1
+		class = star
+		orbit_distance = 20
+		orbit_angle = 1
+		size = { min = 20 max = 30 }
+		has_ring = no
+
+		init_effect = { 
+			change_pc = pc_k_star 
+		}
+	}
+	
+	planet = {
+		count = 1
+		class = star
+		orbit_distance = 0
+		orbit_angle = 148
+		size = { min = 20 max = 30 }
+		has_ring = no
+
+		init_effect = { 	
+			change_pc = pc_g_star 
+			save_global_event_target_as = moores_star_star
+		}
+	}
+	
+	change_orbit = 50
+	
+	planet = {
+		count = { min = 3 max = 8 }
+		class = rl_unhabitable_planets
+		orbit_distance = { min = 20 max = 30 }
+		home_planet = no
+	}
+
+	late_init_effect = {
+		create_starbase = {
+			size = starbase_outpost # We can use any Starbase size. The sizes are located on "game\common\starbase_types"
+			owner = event_target:romulan_country # Using the event_target saved on ufop_system_initializer
+		}
+	}
+}
+
+zone_rom_ufop_nelvana_initializer = {
+	class = "rl_all_stars"
+	flags = { outpost romulan_system romulan }
+	usage = static_system_init
+	flags = { nelvana }
+
+	planet = {
+		count = 1
+		class = star
+		orbit_distance = 20
+		orbit_angle = 1
+		size = { min = 20 max = 30 }
+		has_ring = no
+
+		init_effect = { 
+			change_pc = pc_k_star 
+		}
+	}
+	
+	planet = {
+		count = 1
+		class = star
+		orbit_distance = 0
+		orbit_angle = 148
+		size = { min = 20 max = 30 }
+		has_ring = no
+
+		init_effect = { 	
+			change_pc = pc_g_star 
+			save_global_event_target_as = nelvana_star
+		}
+	}
+	
+	change_orbit = 50
+	
+	planet = {
+		count = { min = 3 max = 8 }
+		class = rl_unhabitable_planets
+		orbit_distance = { min = 20 max = 30 }
+		home_planet = no
+	}
+
+	late_init_effect = {
+		create_starbase = {
+			size = starbase_outpost # We can use any Starbase size. The sizes are located on "game\common\starbase_types"
+			owner = event_target:romulan_country # Using the event_target saved on ufop_system_initializer
+		}
+	}
+}
+
+zone_rom_ufop_draken_initializer = {
+	name = "Name_Draken"
+	class = "rl_all_stars"
+	usage = static_system_init
+	flags = { draken }
+
+	planet = {
+		class = star
+		orbit_distance = 0
+		orbit_angle = 0
+		size = { min = 20 max = 30 }
+		has_ring = no
+
+		init_effect = { save_global_event_target_as = draken_star }
+	}
+	
+	change_orbit = 50
+	
+	planet = {
+		count = 3
+		class = rl_unhabitable_planets
+		orbit_distance = { min = 20 max = 30 }
+		home_planet = no
+	}
+
+	planet = {
+		count = 1
+		class = pc_continental
+		subclass = psc_class_d
+		orbit_distance = { min = 20 max = 30 }
+		home_planet = no
+	}
+
+	planet = {
+		count = 2
+		class = rl_unhabitable_planets
+		orbit_distance = { min = 20 max = 30 }
+		home_planet = no
+	}
+
+	late_init_effect = { 
+		create_starbase = { 
+			size = starbase_outpost 
+			owner = event_target:ufop_country 
+		} 
+	} 
+}
+
+zone_rom_ufop_theta_curry_initializer = {
+	class = "rl_all_stars"
+	flags = { outpost romulan_system romulan }
+	usage = static_system_init
+	flags = { theta_curry }
+
+	planet = {
+		count = 1
+		class = star
+		orbit_distance = 20
+		orbit_angle = 1
+		size = { min = 20 max = 30 }
+		has_ring = no
+
+		init_effect = { 
+			change_pc = pc_k_star 
+		}
+	}
+	
+	planet = {
+		count = 1
+		class = star
+		orbit_distance = 0
+		orbit_angle = 148
+		size = { min = 20 max = 30 }
+		has_ring = no
+
+		init_effect = { 	
+			change_pc = pc_g_star 
+			save_global_event_target_as = theta_curry_star
+		}
+	}
+	
+	change_orbit = 50
+	
+	planet = {
+		count = { min = 3 max = 8 }
+		class = rl_unhabitable_planets
+		orbit_distance = { min = 20 max = 30 }
+		home_planet = no
+	}
+
+	late_init_effect = {
+		create_starbase = {
+			size = starbase_outpost # We can use any Starbase size. The sizes are located on "game\common\starbase_types"
+			owner = event_target:romulan_country # Using the event_target saved on ufop_system_initializer
+		}
+	}
+}
+
+zone_rom_ufop_galorndon_core_initializer = {
+	name = "NAME_Galorndon_Core"
+	class = "rl_all_stars"
+	usage = static_system_init
+	flags = { galorndon_core }
+
+	planet = {
+		class = star
+		orbit_distance = 0
+		orbit_angle = 0
+		size = { min = 20 max = 30 }
+		has_ring = no
+
+		init_effect = { 
+			change_pc = pc_k_star 
+			save_global_event_target_as = galorndon_core_star
+		}
+	}
+
+	change_orbit = 30
+	
+	planet = {
+		count = 1
+		class = pc_molten
+		orbit_distance = 16
+		size = 6
+		home_planet = no
+	}
+
+	planet = {
+		count = 2
+		class = rl_unhabitable_planets
+		size =  { min = 12 max = 28 }
+		orbit_distance = { min = 20 max = 30 }
+		home_planet = no
+	}
+
+	planet = {
+		name = "NAME_Galorndon_Core"
+		count = 1
+		class = pc_ocean
+		orbit_distance = 16
+		size = 30
+		home_planet = no
+	}
+
+	planet = {
+		count = 2
+		class = rl_unhabitable_planets
+		size =  { min = 12 max = 28 }
+		orbit_distance = { min = 20 max = 30 }
+		home_planet = no
+	}
+
+	late_init_effect = {
+		create_starbase = {
+			size = starbase_outpost # We can use any Starbase size. The sizes are located on "game\common\starbase_types"
+			owner = event_target:romulan_country # Using the event_target saved on ufop_system_initializer
+		}
+	}
+}
+
+zone_rom_ufop_poth_mek_initializer = {
+	class = "rl_all_stars"
+	flags = { outpost romulan_system romulan }
+	usage = static_system_init
+	flags = { poth_mek }
+
+	planet = {
+		count = 1
+		class = star
+		orbit_distance = 20
+		orbit_angle = 1
+		size = { min = 20 max = 30 }
+		has_ring = no
+
+		init_effect = { 
+			change_pc = pc_k_star 
+		}
+	}
+	
+	planet = {
+		count = 1
+		class = star
+		orbit_distance = 0
+		orbit_angle = 148
+		size = { min = 20 max = 30 }
+		has_ring = no
+
+		init_effect = { 	
+			change_pc = pc_g_star 
+			save_global_event_target_as = poth_mek_star
+		}
+	}
+	
+	change_orbit = 50
+	
+	planet = {
+		count = { min = 3 max = 8 }
+		class = rl_unhabitable_planets
+		orbit_distance = { min = 20 max = 30 }
+		home_planet = no
+	}
+
+	late_init_effect = {
+		create_starbase = {
+			size = starbase_outpost # We can use any Starbase size. The sizes are located on "game\common\starbase_types"
+			owner = event_target:romulan_country # Using the event_target saved on ufop_system_initializer
+		}
+	}
+}
+
+zone_rom_ufop_epsilon_legato_initializer = {
+	class = "rl_all_stars"
+	flags = { outpost romulan_system romulan }
+	usage = static_system_init
+	flags = { epsilon_legato }
+
+	planet = {
+		count = 1
+		class = star
+		orbit_distance = 20
+		orbit_angle = 1
+		size = { min = 20 max = 30 }
+		has_ring = no
+
+		init_effect = { 
+			change_pc = pc_k_star 
+		}
+	}
+	
+	planet = {
+		count = 1
+		class = star
+		orbit_distance = 0
+		orbit_angle = 148
+		size = { min = 20 max = 30 }
+		has_ring = no
+
+		init_effect = { 	
+			change_pc = pc_g_star 
+			save_global_event_target_as = epsilon_legato_star
+		}
+	}
+	
+	change_orbit = 50
+	
+	planet = {
+		count = { min = 3 max = 8 }
+		class = rl_unhabitable_planets
+		orbit_distance = { min = 20 max = 30 }
+		home_planet = no
+	}
+
+	late_init_effect = {
+		create_starbase = {
+			size = starbase_outpost # We can use any Starbase size. The sizes are located on "game\common\starbase_types"
+			owner = event_target:romulan_country # Using the event_target saved on ufop_system_initializer
+		}
+	}
+}
+
+zone_rom_ufop_iconia_initializer = {
+	class = "rl_all_stars"
+	flags = { outpost romulan_system romulan }
+	usage = static_system_init
+	flags = { iconia }
+
+	planet = {
+		count = 1
+		class = star
+		orbit_distance = 20
+		orbit_angle = 1
+		size = { min = 20 max = 30 }
+		has_ring = no
+
+		init_effect = { 
+			change_pc = pc_k_star 
+		}
+	}
+	
+	planet = {
+		count = 1
+		class = star
+		orbit_distance = 0
+		orbit_angle = 148
+		size = { min = 20 max = 30 }
+		has_ring = no
+
+		init_effect = { 	
+			change_pc = pc_g_star 
+			save_global_event_target_as = iconia_star
+		}
+	}
+	
+	change_orbit = 50
+	
+	planet = {
+		count = { min = 3 max = 8 }
+		class = rl_unhabitable_planets
+		orbit_distance = { min = 20 max = 30 }
+		home_planet = no
+	}
+
+	late_init_effect = {
+		create_starbase = {
+			size = starbase_outpost # We can use any Starbase size. The sizes are located on "game\common\starbase_types"
+			owner = event_target:romulan_country # Using the event_target saved on ufop_system_initializer
+		}
+	}
+}
+
+#-------- Other Bespoke Systems --------#
 
 risa_outpost_initializer = {
 	class = sc_risa
@@ -5734,54 +5846,6 @@ unefra_system_initializer = {
 	}
 }
 
-ufop_draken_initializer = {
-	name = "Name_Draken"
-	class = "rl_all_stars"
-	usage = static_system_init
-	flags = { draken }
-
-	planet = {
-		class = star
-		orbit_distance = 0
-		orbit_angle = 0
-		size = { min = 20 max = 30 }
-		has_ring = no
-
-		init_effect = { save_global_event_target_as = draken_star }
-	}
-	
-	change_orbit = 50
-	
-	planet = {
-		count = 3
-		class = rl_unhabitable_planets
-		orbit_distance = { min = 20 max = 30 }
-		home_planet = no
-	}
-
-	planet = {
-		count = 1
-		class = pc_continental
-		subclass = psc_class_d
-		orbit_distance = { min = 20 max = 30 }
-		home_planet = no
-	}
-
-	planet = {
-		count = 2
-		class = rl_unhabitable_planets
-		orbit_distance = { min = 20 max = 30 }
-		home_planet = no
-	}
-
-	late_init_effect = { 
-		create_starbase = { 
-			size = starbase_outpost 
-			owner = event_target:ufop_country 
-		} 
-	} 
-}
-
 beta_penthe_system_initializer = {
 	name = "NAME_Beta_Penthe"
 	class = "rl_all_stars"
@@ -5913,68 +5977,6 @@ romulan_romii_initializer = {
 		create_starbase = {
 			size = starbase_outpost
 			owner = event_target:romulan_country
-		}
-	}
-}
-
-galorndon_core_initializer = {
-	name = "NAME_Galorndon_Core"
-	class = "rl_all_stars"
-	usage = static_system_init
-	flags = { galorndon_core }
-
-	planet = {
-		class = star
-		orbit_distance = 0
-		orbit_angle = 0
-		size = { min = 20 max = 30 }
-		has_ring = no
-
-		init_effect = { 
-			change_pc = pc_k_star 
-			save_global_event_target_as = galorndon_core_star
-		}
-	}
-
-	change_orbit = 30
-	
-	planet = {
-		count = 1
-		class = pc_molten
-		orbit_distance = 16
-		size = 6
-		home_planet = no
-	}
-
-	planet = {
-		count = 2
-		class = rl_unhabitable_planets
-		size =  { min = 12 max = 28 }
-		orbit_distance = { min = 20 max = 30 }
-		home_planet = no
-	}
-
-	planet = {
-		name = "NAME_Galorndon_Core"
-		count = 1
-		class = pc_ocean
-		orbit_distance = 16
-		size = 30
-		home_planet = no
-	}
-
-	planet = {
-		count = 2
-		class = rl_unhabitable_planets
-		size =  { min = 12 max = 28 }
-		orbit_distance = { min = 20 max = 30 }
-		home_planet = no
-	}
-
-	late_init_effect = {
-		create_starbase = {
-			size = starbase_outpost # We can use any Starbase size. The sizes are located on "game\common\starbase_types"
-			owner = event_target:romulan_country # Using the event_target saved on ufop_system_initializer
 		}
 	}
 }

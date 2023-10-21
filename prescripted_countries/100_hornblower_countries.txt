@@ -100,7 +100,7 @@ ufop = {
 
 	conquered_system_initializers = {
 		"ufop_andor_initializer" "ufop_vulcan_initializer" "ufop_tellar_initializer" "ufop_outpost_initializer"
-		"ufop_eden_initializer" "ufop_draken_initializer" "denobula_outpost_initializer" "risa_outpost_initializer" 
+		"zone_rom_ufop_eden_initializer" "zone_rom_ufop_draken_initializer" "denobula_outpost_initializer" "risa_outpost_initializer" 
 		"cordian_outpost_initializer"
 	}
 
@@ -289,10 +289,10 @@ romulan1 = {
 	conquered_system_initializers = { 
 		"romulan_romulus_initializer" "romulan_kithomer_initializer" "romulan_unroth_initializer"
 		"romulan_chaltok_initializer" "romulan_achernar_initializer" "romulan_outpost_initializer" 
-		"romulan_romii_initializer" "galorndon_core_initializer" "romulan_rator_initializer"
-		"romulan_devron_initializer" "romulan_iota_pavonis_initializer" "romulan_nelvana_initializer"
-		"romulan_fenris_initializer" "romulan_poth_mek_initializer" "romulan_moores_star_initializer"
-		"romulan_epsilon_legato_initializer" "romulan_theta_curry_initializer" "romulan_iconia_initializer"
+		"romulan_romii_initializer" "zone_rom_ufop_galorndon_core_initializer" "romulan_rator_initializer"
+		"zone_rom_ufop_devron_initializer" "zone_rom_ufop_iota_pavonis_initializer" "zone_rom_ufop_nelvana_initializer"
+		"zone_rom_ufop_fenris_initializer" "zone_rom_ufop_poth_mek_initializer" "zone_rom_ufop_moores_star_initializer"
+		"zone_rom_ufop_epsilon_legato_initializer" "zone_rom_ufop_theta_curry_initializer" "zone_rom_ufop_iconia_initializer"
 	}
 
 	graphical_culture = "romulan_01"
