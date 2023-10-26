@@ -1,4 +1,4 @@
-wolf_initializer = {
+ufop_wolf_initializer = {
 	name = "NAME_Wolf"
 	class = sc_f
 	usage = static_system_init

@@ -12,6 +12,7 @@ cardassian_sheva_initializer = {
 
 		init_effect = { 	
 			change_pc = pc_f_star 
+			save_global_event_target_as = sheva_star
 		}
 	}
 	

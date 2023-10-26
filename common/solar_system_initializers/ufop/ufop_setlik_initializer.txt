@@ -2,6 +2,7 @@ ufop_setlik_initializer = {
 	class = "rl_all_stars"
 	flags = { outpost ufop_system ufop }
 	usage = static_system_init
+	flags = { setlik }
 
 	planet = {
 		class = star
@@ -10,8 +11,9 @@ ufop_setlik_initializer = {
 		size = { min = 20 max = 30 }
 		has_ring = no
 
-		init_effect = { 	
+		init_effect = {
 			change_pc = pc_b_star 
+			save_global_event_target_as = setlik_star
 		}
 	}
 
@@ -29,9 +31,10 @@ ufop_setlik_initializer = {
 			add_modifier = {
 				modifier = pre_existing_colony
 				days = -1
-			}			
+			}
 		}
 	}
+
 	planet = {
 		name = "NAME_Setlik_II"
 		count = 1
@@ -45,7 +48,7 @@ ufop_setlik_initializer = {
 			add_modifier = {
 				modifier = pre_existing_colony
 				days = -1
-			}			
+			}
 		}
 	}
 
@@ -62,7 +65,7 @@ ufop_setlik_initializer = {
 			add_modifier = {
 				modifier = pre_existing_colony
 				days = -1
-			}			
+			}
 		}
 	}
 
@@ -79,7 +82,7 @@ ufop_setlik_initializer = {
 			add_modifier = {
 				modifier = pre_existing_colony
 				days = -1
-			}			
+			}
 		}
 	}
 

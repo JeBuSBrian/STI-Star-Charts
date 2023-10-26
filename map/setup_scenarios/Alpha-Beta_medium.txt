@@ -1165,7 +1165,7 @@ bespoke_procedural_scenario = {
 
 	system = {
 		name = "NAME_Umoth" position = { x = 47 y = 413 }
-		initializer = uncontrolled_system_initializer spawn_weight = { base = 1 } 
+		initializer = uncontrolled_umoth_initializer spawn_weight = { base = 1 } 
 	}
 
 	system = {
