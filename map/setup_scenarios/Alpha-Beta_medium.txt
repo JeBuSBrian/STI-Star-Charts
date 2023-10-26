@@ -47,7 +47,7 @@ bespoke_procedural_scenario = {
 	nebula_min_dist = 200
 
 	nebula = { name = "Briar Patch" position = { x = -13 y = 407 } radius = 10 }
-	nebula = { name = "Badlands" position = { x = 72 y = 376 } radius = 12 }
+	nebula = { name = "Badlands" position = { x = 72 y = 370 } radius = 8 }
 	nebula = { name = "Typhon Expanse" position = { x = -48 y = 252 } radius = 15 }
 	nebula = { name = "Azure Nebula" position = { x = -86 y = 394} radius = 4}
 	nebula = { name = "Rolor Nebula" position = { x = 81 y = 360} radius = 3}
