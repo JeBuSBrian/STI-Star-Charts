@@ -1,4 +1,4 @@
-l_default:
+﻿l_default:
   NAME_59_Eridani: "59 Eridani"
   NAME_61-Cygni: "61 Cygni"
   NAME_61-Cygni-A: "61 Cygni A"
@@ -135,6 +135,7 @@ l_default:
   NAME_Earth: "Earth"
   NAME_Eden: "Eden"
   NAME_Efrosia: "Efrosia"
+  NAME_Elaurian: "New Aur"
   NAME_Epsilon_Legato: "Epsilon Legato"
   NAME_Epsilon_Monocerontis: "Epsilon Monocerontis"
   NAME_EridaniA: "Eridani-A"
