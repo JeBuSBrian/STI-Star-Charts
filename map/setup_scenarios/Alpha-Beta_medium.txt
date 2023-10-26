@@ -820,6 +820,11 @@ bespoke_procedural_scenario = {
 		initializer = ufop_andor_initializer spawn_weight = { base = 1 } 
 	}
 
+	system = {
+		name = "NAME_Illyria" position = { x = 56 y = 454 }
+		initializer = ufop_illyria_initializer spawn_weight = { base = 1 }
+	}
+
 	system = { position = { x = -24 y = 391 }
 		initializer = ufop_outpost_initializer spawn_weight = { base = 1 } 
 	}
