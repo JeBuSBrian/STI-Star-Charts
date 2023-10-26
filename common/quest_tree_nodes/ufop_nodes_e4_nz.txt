@@ -121,11 +121,11 @@ qt_ufop_control_neutral_zone = {
 	}
 
 	on_started = {
-		
+
 	}
 
 	on_blocked = {
-		
+
 	}
 
 	on_finished = {
@@ -138,7 +138,7 @@ qt_ufop_control_neutral_zone = {
 		}	
 	}
 
-	modifier = {				
+	modifier = {
 	}
 
 	ai_weight = {

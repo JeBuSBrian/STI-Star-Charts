@@ -37,3 +37,13 @@
  qt_ufop_control_neutral_zone_nimbus_possible_tooltip: "$TRIGGER_PASS$ §YNimbus§! System is within §HUnited Federation of Planets§! borders."
  qt_ufop_control_neutral_zone_theta_curry_fail_tooltip: "$TRIGGER_FAIL$ §YTheta Curry§! System is within §HUnited Federation of Planets§! borders."
  qt_ufop_control_neutral_zone_theta_curry_possible_tooltip: "$TRIGGER_PASS$ §YTheta Curry§! System is within §HUnited Federation of Planets§! borders."
+
+# Cardassian C4 #
+ qt_cardassian_c4_tooltip_sheva_check_fail: "$TRIGGER_FAIL$ §YSheva§! System is within §HCardassian Union§! borders"
+ qt_cardassian_c4_tooltip_sheva_check_success: "$TRIGGER_PASS$ §YSheva§! System is within §HCardassian Union§! borders"
+ qt_cardassian_c4_tooltip_setlik_check_fail: "$TRIGGER_FAIL$ §YSetlik§! System is within §HCardassian Union§! borders"
+ qt_cardassian_c4_tooltip_setlik_check_success: "$TRIGGER_PASS$ §YSetlik§! System is within §HCardassian Union§! borders"
+ qt_cardassian_c4_tooltip_dorvan_check_fail: "$TRIGGER_FAIL$ §YDorvan§! System is within §HCardassian Union§! borders"
+ qt_cardassian_c4_tooltip_dorvan_check_success: "$TRIGGER_PASS$ §YDorvan§! System is within §HCardassian Union§! borders"
+ qt_cardassian_c4_tooltip_umoth_check_fail: "$TRIGGER_FAIL$ §YUmoth§! System is within §HCardassian Union§! borders"
+ qt_cardassian_c4_tooltip_umoth_check_success: "$TRIGGER_PASS$ §YUmoth§! System is within §HCardassian Union§! borders"
